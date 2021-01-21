@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkslateblue;
+}
+
+.header-all {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.users {
+  border: 1px solid red;
+  height: 100vw;
+  width: 25vw;
+  text-align: center;
+}
+
+.users h1 {
+  border: 1px solid black;
+  background-color: grey;
+  text-align: center;
+}
+
+.message {
+  border: 1px solid red;
+  height: 100vw;
+  width: 25vw;
+  text-align: center;
+}
+
+.message h1 {
+  border: 1px solid black;
+  background-color: grey;
+  text-align: center;
+}
+
+.conversation {
+  border: 1px solid red;
+  height: 100vw;
+  width: 50vw;
+  text-align: center;
+}
+
+.conversation h1 {
+  border: 1px solid black;
+  background-color: grey;
+  text-align: center;
+}
+
+.matchmaker {
+  border: 1px solid red;
+  height: 100vw;
+  width: 25vw;
+  text-align: center;
+}
+
+.matchmaker h1 {
+  border: 1px solid black;
+  background-color: grey;
+  text-align: center;
+}
+
+.users_list {
+  overflow: scroll;
+  height: 95vw;
+}
+
+.users__list-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.users__list-item img {
+  width: 4rem;
+  background: red;
+  box-shadow: 4px 4px blue;
+  margin-top: 1rem;
+  border-radius: 33%;
+}
+
+.users_list li:nth-child(1n) {
+  background-color: rgb(124, 42, 255);
+}
+
+.users_list li:nth-child(2n) {
+  background-color: rgb(208, 179, 255);
+}
+
+.user-list li {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.users__list-item a {
+  text-decoration: none;
+  color: #000;
+  padding: 1rem 0 1rem 0;
+}
+
+.users__list-item span {
+  padding-left: 1rem;
+  align-items: center;
+  align-self: center;
+}
+
+.message__list-item {
+  list-style: none;
+  border-bottom: 1px solid black;
+}
+
+.message__list-item a {
+  color: #000;
+  text-decoration: none;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.message_list h2 {
+  font-size: 1.6rem;
+  border: 1px solid red;
+  padding: 1rem 2rem;
+  background-color: #808080;
+}
+
+.incoming__message-list {
+  overflow: scroll;
+  height: 43vw;
+}
+
+.incoming__message-list li:nth-child(1n) {
+  background-color: rgb(124, 42, 255);
+}
+
+.incoming__message-list li:nth-child(2n) {
+  background-color: rgb(208, 179, 255);
+}
+
+.outgoing__message-list {
+  overflow: scroll;
+  height: 40vw;
+}
+
+.outgoing__message-list li:nth-child(1n) {
+  background-color: rgb(124, 42, 255);
+}
+
+.outgoing__message-list li:nth-child(2n) {
+  background-color: rgb(208, 179, 255);
+}
+
+.matchmaker {
+  overflow: scroll;
+  margin-bottom: 3rem;
+}
+
+.matchmaker h3 {
+  border: 1px solid red;
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  background-color: #808080;
+}
+
+.matches__list_dislike {
+  margin-bottom: 10rem;
+}
+
+.matches__list_dislike li:nth-child(2n) {
+  background-color: rgb(208, 179, 255);
+}
+
+.message__list-item p {
+  padding-left: 0.5rem;
+}
+
+.matches__list_like li:nth-child(1n) {
+  background-color: rgb(124, 42, 255);
+}
+
+.matches__list_like li:nth-child(2n) {
+  background-color: rgb(208, 179, 255);
+}
+
+.message__list-item p {
+  font-size: 0.8rem;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.convertUser__list-item li {
+  list-style: none;
+}
+
+.matches__list_dislike li:nth-child(1n) {
+  background-color: rgb(124, 42, 255);
+}
+
+.matches__list_dislike li:nth-child(2n) {
+  background-color: rgb(208, 179, 255);
+}
+
+.convertUser__list-item.message-receiver {
+  border: 1px solid purple;
+  background-color: rgb(124, 42, 255);
+  border-radius: 2rem;
+  font-size: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.convertUser__list-item.message-receiver a {
+  color: white;
+}
+
+.convertUser__list-item.message-sender {
+  border: 1px solid purple;
+  background-color: rgb(208, 179, 255);
+  border-radius: 2rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.convertUser__list-item.message-sender a {
+  color: white;
+}
+
+.message__from-first-user {
+  list-style: none;
+  text-align: left;
+  border: 1px solid red;
+}
+
+.message__from-first-user li a {
+  text-decoration: none;
+}
+
+
+.text-matches span,
+p {
+  color: white;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*
+const { getMessagesFromUserById } = require('../api/controllers/messageController');
+*/
