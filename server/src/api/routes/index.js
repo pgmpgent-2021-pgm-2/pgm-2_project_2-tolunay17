@@ -39,10 +39,12 @@ router.delete('/messages/:messageId', messageController.deleteMessage);
 Routes for matches
 */
 router.get('/matches', matchController.getMatches);
+router.get('/')
 router.get('/matches/:senderId/:receiverId', matchController.getMatchByIds);
 router.post('/matches', matchController.createMatch);
 router.put('/matches/:senderId/:receiverId', matchController.updateMatch);
 router.delete('/matches/:senderId/:receiverId', matchController.deleteMatch);
+
 
 // Export the router
 module.exports = router;

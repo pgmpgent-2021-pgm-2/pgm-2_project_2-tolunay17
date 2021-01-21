@@ -115,7 +115,7 @@ const handleGracefully = async () => {
   try {
     await server.close(async (err) => {
       if (err) throw err;
-      
+
       if (NODE_ENV === 'development') {
         console.log('Server is gracefully closed!');
       }
