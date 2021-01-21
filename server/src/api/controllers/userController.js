@@ -38,14 +38,32 @@ const getUserById = (req, res, next) => {
 Create a new user
 */
 const createUser = (req, res, next) => {
-  handleHTTPError(new HTTPError('The action method is not yet implemented!', 501), next);
+  try {
+    // Get message parameter from the url
+    const { userId } = req.params;
+    // Get users from the dataService
+    const user = dataService.getUserById(userId);
+    // Send response
+    res.status(200).json(user);
+  } catch (error) {
+    handleHTTPError(error, next);
+  }
 };
 
 /*
 Update a specific user
 */
 const updateUser = (req, res, next) => {
-  handleHTTPError(new HTTPError('The action method is not yet implemented!', 501), next);
+  try {
+    // Get message parameter from the url
+    const { userId } = req.params;
+    // Get users from the dataService
+    const user = dataService.getUserById(userId);
+    // Send response
+    res.status(200).json(user);
+  } catch (error) {
+    handleHTTPError(error, next);
+  }
 };
 
 /*
